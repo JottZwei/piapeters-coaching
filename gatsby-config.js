@@ -39,7 +39,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: process.env.gps2ond,
+          id: process.env.TYPEKIT_ID,
         },
       },
     }
