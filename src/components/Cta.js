@@ -27,7 +27,7 @@ const Wrap = styled.div`
 
 const Cta = () => {
     return (
-        <Wrap>
+        <Wrap id="kontakt">
             <Headline1>
                 Kommen wir ins Gespräch!
             </Headline1>

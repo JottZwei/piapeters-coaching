@@ -1,9 +1,12 @@
+require("dotenv").config()
+
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Pia Peters`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `Jan Francksen`,
+    siteUrl: `https://jott-zwei.de/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,6 +34,14 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-smoothscroll`
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.gps2ond,
+        },
+      },
+    }
   ],
 }

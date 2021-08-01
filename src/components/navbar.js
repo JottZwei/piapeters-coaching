@@ -8,13 +8,10 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 const Wrap = styled.header`
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 5px 20px;
     position: fixed;
     width: 100%;
-    background: ${({active}) => active ? "#fffb" : "#fff0"};
-    backdrop-filter: ${({active}) => active ? "blur(15px)" : "blur(0px)"};
     z-index: 99;
-    transition: 0.5s ease background-color, .3s ease backdrop-filter;
 
     & > ${Container}{
         display: flex; 
@@ -28,10 +25,15 @@ const Wrap = styled.header`
 
     @media screen and (min-width: 1001px){
         top: 0;
+        padding: 10px;
+        background: ${({active}) => active ? "#fffb" : "#fff0"};
+        backdrop-filter: ${({active}) => active ? "blur(15px)" : "blur(0px)"};
+        transition: 0.5s ease background-color, .3s ease backdrop-filter;
     }
 
     @media screen and (max-width: 1000px){
         bottom: 0;
+        background: white;
     }
 `
 
@@ -97,7 +99,7 @@ const Navbar = () => {
                 <NavItems>
                     <NavItem onClick={() => scrollTo('#willkommen')}>Home</NavItem>
                     <NavItem onClick={() => scrollTo('#schwerpunkte')}>Schwerpunkte</NavItem>
-                    <NavItem onClick={() => scrollTo('#about')}>Über mich</NavItem>
+                    <NavItem onClick={() => scrollTo('#uebermich')}>Über mich</NavItem>
                     <NavItem onClick={() => scrollTo('#kontakt')}>Kontakt</NavItem>
                 </NavItems>
             </Nav>

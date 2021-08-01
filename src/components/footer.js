@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Headline3, Text, ButtonInternal } from './defaultComponents'
+import { Container, Headline3, Text } from './defaultComponents'
 import { StaticImage } from 'gatsby-plugin-image'
+import {Link} from 'gatsby'
 
 const Wrap = styled(Container)`
     text-align: center;
@@ -19,6 +20,12 @@ const Wrap = styled(Container)`
     padding: 50px 0;
 }
 `
+
+const Button = styled(Link)`
+    text-decoration: none;
+    color: var(--text-color);
+`
+
 
 const Column = styled.div`
     @media screen and (max-width: 978px){
@@ -46,8 +53,8 @@ const Footer = () => {
             <Column>
                 <Headline3>Links</Headline3>
                 <Text>
-                    <ButtonInternal to="impressum">Impressum</ButtonInternal> <br />
-                    <ButtonInternal to="datenschutz">Datenschutzerklärung</ButtonInternal>
+                    <Button to="impressum">Impressum</Button> <br />
+                    <Button to="datenschutz">Datenschutzerklärung</Button>
                 </Text>
             </Column>
             <Column>

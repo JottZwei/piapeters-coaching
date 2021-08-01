@@ -90,7 +90,7 @@ const schwerpunkte = () => {
     return (
         <Wrap id="schwerpunkte">
             <Container>
-            <Headline1>Schwerpunkte</Headline1>
+            <Headline1>Schwer&shy;punkte</Headline1>
             <Text>Im Folgenden findest Du die Aufführung meines Leistungsangebots mit einigen wissenswerten Details,die meine Schwerpunkte näher beleuchten.</Text>
             <BigImage>
             <Image1>
