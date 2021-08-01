@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Headline3, Text } from './defaultComponents'
+import { Container, Headline3, Text, ButtonInternal } from './defaultComponents'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Wrap = styled(Container)`
@@ -46,11 +46,8 @@ const Footer = () => {
             <Column>
                 <Headline3>Links</Headline3>
                 <Text>
-                    LinkedIn <br />
-                    Xing <br />
-                    Instagram <br /><br/>
-                    Impressum <br />
-                    Datenschutzerklärung
+                    <ButtonInternal to="impressum">Impressum</ButtonInternal> <br />
+                    <ButtonInternal to="datenschutz">Datenschutzerklärung</ButtonInternal>
                 </Text>
             </Column>
             <Column>

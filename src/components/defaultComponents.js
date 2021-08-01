@@ -57,5 +57,17 @@ export const ButtonInternal = styled(Link)`
 `
 
 export const ButtonExternal = styled.a`
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.2s ease color, 0.2s ease background-color;
+    cursor: pointer;
 
+    &:hover {
+        color: var(--white);
+        background: var(--primary-color);
+    }
 `

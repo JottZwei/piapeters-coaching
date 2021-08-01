@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container } from './defaultComponents'
-import { Link } from 'gatsby'
 import { FaBars } from 'react-icons/fa';
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Wrap = styled.header`
     display: flex;
@@ -50,10 +49,11 @@ const Nav = styled.nav`
     color: var(--primary-color);
     text-transform: uppercase;
 `  
-const NavItem = styled(Link)`
+const NavItem = styled.a`
     text-decoration: none;
     color: var(--primary-color);
     font-size: .8rem;
+    cursor: pointer;
 `
 
 const NavItems = styled.div`
@@ -95,9 +95,10 @@ const Navbar = () => {
                     <FaBars />
                 </MobileIcon>
                 <NavItems>
-                    <NavItem to="#home">Home</NavItem>
-                    <NavItem to="#schwerpunkte">Schwerpunkte</NavItem>
-                    <NavItem to="#uebermich">Über mich</NavItem>
+                    <NavItem onClick={() => scrollTo('#willkommen')}>Home</NavItem>
+                    <NavItem onClick={() => scrollTo('#schwerpunkte')}>Schwerpunkte</NavItem>
+                    <NavItem onClick={() => scrollTo('#about')}>Über mich</NavItem>
+                    <NavItem onClick={() => scrollTo('#kontakt')}>Kontakt</NavItem>
                 </NavItems>
             </Nav>
             </Container>

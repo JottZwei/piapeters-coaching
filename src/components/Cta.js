@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Headline1, Headline3 } from './defaultComponents'
+import { Headline1, ButtonExternal } from './defaultComponents'
 
 const Wrap = styled.div`
     @media screen and (max-width: 977px){
@@ -31,7 +31,7 @@ const Cta = () => {
             <Headline1>
                 Kommen wir ins Gespräch!
             </Headline1>
-            <Headline3>Jetzt Kontakt aufnehmen!</Headline3>
+            <ButtonExternal href="mailto:pia@petersgermany.net">Jetzt Kontakt aufnehmen!</ButtonExternal>
         </Wrap>
     )
 }

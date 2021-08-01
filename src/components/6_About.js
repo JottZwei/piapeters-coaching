@@ -10,6 +10,7 @@ const Wrap = styled(Container)`
 
     @media screen and (min-width:1100px){
     margin: 100px auto;
+    max-width: 800px;
     text-align: center;
     }
 

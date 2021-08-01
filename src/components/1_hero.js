@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Headline1, Headline2, ButtonInternal } from './defaultComponents'
+import { Container, Headline1, Headline2, ButtonExternal } from './defaultComponents'
 import { StaticImage } from 'gatsby-plugin-image'
 import { FaLongArrowAltDown } from 'react-icons/fa'
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 
 const Wrap = styled.section`
     width: 100%;
@@ -14,6 +16,7 @@ const Wrap = styled.section`
     & ${Headline1}{
                 text-transform: uppercase;
                 margin-top: 5vw;
+                font-weight: 500;
             }
 
     & ${Headline2}{
@@ -34,7 +37,6 @@ const Wrap = styled.section`
 
             & ${Headline1}{
                 margin-top: 0;
-                margin-bottom: 20px;
             }
 
             & svg {
@@ -58,14 +60,18 @@ const Strong = styled.span`
     font-weight: 700;
 `
 
+const Grey = styled.span`
+    color: var(--text-color);
+`
+
 const hero = () => {
     return (
         <Wrap id="home" >
             <Container>
                 <LeftContent>
                     <Headline1>Pia <Strong>Peters</Strong></Headline1>
-                    <Headline2>Coachin und Organisationsberaterin</Headline2>
-                    <ButtonInternal to="#willkommen">Mehr erfahren <FaLongArrowAltDown /></ButtonInternal>
+                    <Headline2><Grey>Coachin und Organisationsberaterin</Grey></Headline2>
+                    <ButtonExternal onClick={() => scrollTo('#willkommen')}>Mehr erfahren <FaLongArrowAltDown /></ButtonExternal>
                 </LeftContent>
                 <RightContent>
                     <StaticImage src="../images/pp_image_04.png" alt="Pia Peters Coaching Logo" placeholder="blurred" width={500} />
