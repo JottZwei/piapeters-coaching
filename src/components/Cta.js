@@ -14,10 +14,9 @@ const Wrap = styled.div`
     text-align: center;
     max-width: 500px;
     color: var(--primary-color);
-    margin: 50px auto;
+    margin: 7vw auto;
 
     @media screen and (min-width: 978px){
-    margin: 200px auto;
     max-width: 500px;
     color: var(--primary-color);
 
