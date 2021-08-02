@@ -63,9 +63,12 @@ const NavItem = styled.a`
 `
 
 const MobIcon = styled.span`
-    display: block;
-    text-align: center;
-    color: var(--white);
+display: block;
+text-align: center;
+color: var(--white);
+@media screen and (min-width:1001px){
+    display: none;
+}
 `
 
 const NavItems = styled.div`
