@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container } from './defaultComponents'
-import { FaBars } from 'react-icons/fa';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Wrap = styled.header`
@@ -33,7 +32,7 @@ const Wrap = styled.header`
 
     @media screen and (max-width: 1000px){
         bottom: 0;
-        background: white;
+        background: var(--primary-color);
     }
 `
 
@@ -56,16 +55,16 @@ const NavItem = styled.a`
     color: var(--primary-color);
     font-size: .8rem;
     cursor: pointer;
+    
+    @media screen and (max-width: 1000px){
+    color: var(--white);
+    }
 `
 
 const NavItems = styled.div`
     display: flex;
     gap: 3vw;
     column-gap: 3vw;
-`
-
-const MobileIcon = styled.div`
-    display: none;
 `
 
 const Navbar = () => {
@@ -93,9 +92,6 @@ const Navbar = () => {
                 <StaticImage src="../images/logo_web.png" alt="Pia Peters Coaching Logo" placeholder="blurred" loading="eager" width={120} />
             </Logo>
             <Nav>
-                <MobileIcon>
-                    <FaBars />
-                </MobileIcon>
                 <NavItems>
                     <NavItem onClick={() => scrollTo('#willkommen')}>Home</NavItem>
                     <NavItem onClick={() => scrollTo('#schwerpunkte')}>Schwerpunkte</NavItem>

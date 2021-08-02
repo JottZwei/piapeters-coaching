@@ -89,7 +89,7 @@ const tiercoaching = () => {
                 <Content>
                     <Headline3>Tiergestütztes Coaching</Headline3>
                     <Text>
-                    Beim tiergestützten Coaching wird der Coachee durch einen Vierbeiner, in diesem Fall einem Hund, in seinem Coaching-Prozess begleitet. Das Besondere am Hunde gestützten Coaching ist, dass der Hund als Spiegel unserer Selbstfungiert und dadurch neue Einblicke eröffnet werden, die dem Coachee in der privaten und beruflichen Weiterentwicklung unterstützen sollen.
+                    Beim tiergestützten Coaching wird der Coachee durch einen Vierbeiner, in diesem Fall einem Hund, in seinem Coaching-Prozess begleitet. Das Besondere am Hunde gestützten Coaching ist, dass der Hund als Spiegel unserer Selbst fungiert und dadurch neue Einblicke eröffnet werden, die dem Coachee in der privaten und beruflichen Weiterentwicklung unterstützen sollen.
                     </Text>
                 </Content>
             </Wrap>
