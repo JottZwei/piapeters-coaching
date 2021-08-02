@@ -40,6 +40,9 @@ module.exports = {
           families: ['omnes-pro', 'capitolina'],
         },
       },
-    }
+    },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-netlify`
   ],
 }
