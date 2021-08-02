@@ -1,6 +1,3 @@
-require("dotenv").config()
-
-
 module.exports = {
   siteMetadata: {
     title: `Pia Peters`,

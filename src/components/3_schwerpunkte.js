@@ -91,7 +91,7 @@ const schwerpunkte = () => {
         <Wrap id="schwerpunkte">
             <Container>
             <Headline1>Schwer&shy;punkte</Headline1>
-            <Text>Im Folgenden findest Du die Aufführung meines Leistungsangebots mit einigen wissenswerten Details,die meine Schwerpunkte näher beleuchten.</Text>
+            <Text>Im Folgenden findest Du die Aufführung meines Leistungsangebots mit einigen wissenswerten Details, die meine Schwerpunkte näher beleuchten.</Text>
             <BigImage>
             <Image1>
                 <StaticImage src="../images/pp_image_02.jpg" alt="Pia Peters Coaching Logo" width={600} placeholder="blurred" objectFit="cover" objectPosition="left top" />
