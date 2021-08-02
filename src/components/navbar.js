@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container } from './defaultComponents'
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { FaHome, FaCheck, FaUserAlt, FaEnvelope } from 'react-icons/fa'
 
 const Wrap = styled.header`
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px 20px;
+    padding: 15px 0px 30px;
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -55,14 +56,21 @@ const NavItem = styled.a`
     color: var(--primary-color);
     font-size: .8rem;
     cursor: pointer;
-    
+
     @media screen and (max-width: 1000px){
     color: var(--white);
     }
 `
 
+const MobIcon = styled.span`
+    display: block;
+    text-align: center;
+    color: var(--white);
+`
+
 const NavItems = styled.div`
     display: flex;
+    justify-content: center;
     gap: 3vw;
     column-gap: 3vw;
 `
@@ -93,10 +101,10 @@ const Navbar = () => {
             </Logo>
             <Nav>
                 <NavItems>
-                    <NavItem onClick={() => scrollTo('#willkommen')}>Home</NavItem>
-                    <NavItem onClick={() => scrollTo('#schwerpunkte')}>Schwerpunkte</NavItem>
-                    <NavItem onClick={() => scrollTo('#uebermich')}>Über mich</NavItem>
-                    <NavItem onClick={() => scrollTo('#kontakt')}>Kontakt</NavItem>
+                    <NavItem onClick={() => scrollTo('#willkommen')}><MobIcon><FaHome /></MobIcon>Home</NavItem>
+                    <NavItem onClick={() => scrollTo('#schwerpunkte')}><MobIcon><FaCheck /></MobIcon>Schwerpunkte</NavItem>
+                    <NavItem onClick={() => scrollTo('#uebermich')}><MobIcon><FaUserAlt /></MobIcon>Über mich</NavItem>
+                    <NavItem onClick={() => scrollTo('#kontakt')}><MobIcon><FaEnvelope /></MobIcon>Kontakt</NavItem>
                 </NavItems>
             </Nav>
             </Container>

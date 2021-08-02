@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #BE9F56;
     --text-color: #444;
     --white: #FFFAFF;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   * {

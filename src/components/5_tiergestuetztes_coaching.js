@@ -51,7 +51,6 @@ const BigImage = styled.div`
 `
 
 const Box = styled.div`
-    display: none;
 
     @media screen and (min-width: 978px){
         display: inline;

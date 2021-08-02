@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Headline1, Container, Text } from './defaultComponents'
 
 const Wrap = styled.section`
-margin-bottom: -50px;
     & ${Text}{
         display: inline-block;
         margin: 2vw auto;
@@ -12,6 +11,7 @@ margin-bottom: -50px;
     
     @media screen and (min-width: 978px){
     text-align: center;
+    margin-bottom: -50px;
 
         & ${Text}{
             max-width: 800px;
@@ -57,16 +57,7 @@ const Image1 = styled.div`
 `
 
 const Box = styled.div`
-    text-transform: uppercase;
-    border: 3px solid var(--primary-color);
-    aspect-ratio: 1;
-    width: 250px;
-    padding: 10px;
-    font-weight: 700;
-    font-family: capitolina, serif;
-    font-size: 2rem;
-    margin-left: auto;
-    margin-right: 3vw;
+margin-top: 30px;
     
     @media screen and (max-width: 977px){
         transform: translateY(-35%);
@@ -77,6 +68,14 @@ const Box = styled.div`
 
 
     @media screen and (min-width: 978px){
+        text-transform: uppercase;
+        border: 3px solid var(--primary-color);
+        aspect-ratio: 1;
+        padding: 10px;
+        font-weight: 700;
+        font-family: capitolina, serif;
+        margin-left: auto;
+        margin-right: 3vw;
         position: absolute;
         right: 0;
         bottom: 0;

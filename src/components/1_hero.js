@@ -11,7 +11,7 @@ const Wrap = styled.section`
     height: 100vh;
     background: linear-gradient(-180deg, white, lightgrey );
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
 
     & ${Headline1}{
                 text-transform: uppercase;
@@ -24,7 +24,7 @@ const Wrap = styled.section`
         margin-bottom: 30px;
         font-family: omnes-pro, sans-serif;
                 font-weight: 400;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
     }
 
     @media screen and (min-width: 1000px){
@@ -53,7 +53,9 @@ const LeftContent = styled.div`
 const RightContent = styled.div`
     align-self: flex-end;
     justify-self: center;
-    padding-top: 100px;
+    @media screen and (min-width: 1000px){
+        padding-top: 100px;
+    }
 `
 
 const Strong = styled.span`
