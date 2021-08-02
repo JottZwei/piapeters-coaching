@@ -36,10 +36,11 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-smoothscroll`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
           id: process.env.TYPEKIT_ID,
+          families: ['omnes-pro', 'capitolina'],
         },
       },
     }
