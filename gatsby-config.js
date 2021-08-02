@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Pia Peters`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Pia Peters | Coachin und Organisationsberaterin`,
     author: `Jan Francksen`,
     siteUrl: `https://jott-zwei.de/`,
   },
