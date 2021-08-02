@@ -51,6 +51,14 @@ const BigImage = styled.div`
 `
 
 const Box = styled.div`
+    @media screen and (max-width: 977px){
+margin-top: -55px;
+margin-left: 10px;
+margin-bottom: 30px;
+z-index: 5;
+transform: translateZ(0);
+color: white;
+    }
 
     @media screen and (min-width: 978px){
         display: inline;

@@ -50,7 +50,9 @@ const Nav = styled.nav`
     display: flex; 
     color: var(--primary-color);
     text-transform: uppercase;
-    width: 100%;
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }
 `  
 const NavItem = styled.a`
     text-decoration: none;
@@ -74,8 +76,16 @@ color: var(--white);
 
 const NavItems = styled.div`
     display: flex;
-    justify-content: space-around;
+    @media screen and (max-width: 1000px){
+
+        justify-content: space-around;
     width: 100%;
+    }
+
+    @media screen and (min-width:1001px){
+    column-gap: 3vw;
+    gap: 3vw;
+}
 `
 
 const Navbar = () => {

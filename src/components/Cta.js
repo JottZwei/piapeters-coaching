@@ -15,14 +15,14 @@ const Wrap = styled.div`
     max-width: 500px;
     color: var(--primary-color);
     margin: 7vw auto;
+    & > ${Headline1}{
+        margin-bottom: 40px;
+    }
 
     @media screen and (min-width: 978px){
     max-width: 500px;
     color: var(--primary-color);
-
-    & > ${Headline1}{
-        margin-bottom: 40px;
-    }}
+}
 `
 
 const Cta = () => {

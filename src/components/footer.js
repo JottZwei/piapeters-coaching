@@ -26,6 +26,12 @@ const Button = styled(Link)`
     color: var(--text-color);
 `
 
+const ExternLink = styled.a`
+
+text-decoration: none;
+    color: var(--text-color);
+`
+
 
 const Column = styled.div`
     @media screen and (max-width: 978px){
@@ -46,8 +52,8 @@ const Footer = () => {
                     Pia Peters <br/>
                     Musterstraße 123 <br/>
                     123456 Musterstadt <br/>
-                    Telfon 0123 456789 <br/><br />
-                    E-Mail: pia@petersgermany.net
+                    Telefon <ExternLink href="tel:01234567890">0123 456789</ExternLink> <br/><br />
+                    E-Mail: <ExternLink href="pia@petersgermany.net">pia@petersgermany.net</ExternLink>
                 </Text>
             </Column>
             <Column>

@@ -20,8 +20,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: omnes-pro, sans-serif;
   }
 
-  body {
-    
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

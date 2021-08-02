@@ -57,13 +57,13 @@ const Image1 = styled.div`
 `
 
 const Box = styled.div`
-margin-top: 30px;
     
     @media screen and (max-width: 977px){
-        transform: translateY(-35%);
-        display: flex;
-        align-items: flex-end;
-        box-sizing: border-box;
+        margin-top: -35px;
+        margin-left: 10px;
+        z-index: 5;
+        transform: translateZ(0);
+        color: white;
     } 
 
 
